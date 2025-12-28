@@ -14,7 +14,7 @@
 body {
     background: var(--bg-color);
     display: flex;
-    height: 500vh;
+    height: auto;
     width: 100%;
 }
 
@@ -111,7 +111,7 @@ a {
     cursor: pointer;
 }
 
-/* ----main--- */
+/* ----Dashboard_main--- */
 
 #main {
     width: 100%;
@@ -279,3 +279,56 @@ button {
     font-weight: 500;
     color: rgb(123, 128, 154);
 }
+
+
+/* ---- signup ----  */
+
+
+.register_form {
+    justify-content: center;
+    height: 100vh;
+}
+
+.form {
+    background-color: white;
+    width: 356px;
+    padding: 32px;
+    margin: auto;
+    border-radius: 12px;
+}
+
+.lable-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup_title {
+    background: var(--slide-select-color);
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+    border-radius: 12px;
+    position: relative;
+    top: -60px;
+}
+
+.lable-inputs label {
+    color: rgb(123, 128, 154);
+    margin-top: 10px;
+}
+
+.lable-inputs input {
+    border: none;
+    border-bottom: 1px solid rgb(123, 128, 154);
+    height: 30px;
+    border-radius: 6px;
+    outline: none;
+}
+
+.lable-inputs input:focus {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+

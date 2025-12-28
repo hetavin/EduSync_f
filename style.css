@@ -1,0 +1,281 @@
+:root {
+    --slide-bg-color: linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25));
+    --bg-color: rgb(240, 242, 245);
+    --slide-select-color: linear-gradient(195deg, rgb(73, 163, 241), rgb(26, 115, 232));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+}
+
+body {
+    background: var(--bg-color);
+    display: flex;
+    height: 500vh;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ---- slidebar ---- */
+
+#slidebar {
+    padding: 15px;
+    width: 250px;
+    height: 96vh;
+    position: fixed;
+    left: 0;
+    display: block;
+}
+
+.slidebar {
+    background: var(--slide-bg-color);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+}
+
+.logo img {
+    width: 60px;
+}
+
+.project_title {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.dashboard a,
+.profile a,
+.tables a {
+    display: flex;
+    justify-content: flex-start;
+    height: 45px;
+    padding: 0 25px;
+    margin: 5px;
+}
+
+.dashboard:hover,
+.profile:hover,
+.tables:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    cursor: pointer;
+}
+
+.dashboard img,
+.profile img,
+.tables img {
+    height: 30px;
+    margin: auto 0;
+}
+
+.dashboard_menu {
+    color: white;
+    font-size: 15px;
+    margin: auto 0;
+}
+
+.dashboard {
+    background: var(--slide-select-color);
+    width: 200px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    cursor: pointer;
+}
+
+.profile {
+    width: 200px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    cursor: pointer;
+}
+
+.tables {
+    width: 200px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    cursor: pointer;
+}
+
+/* ----main--- */
+
+#main {
+    width: 100%;
+    height: 100ch;
+    padding: 24px;
+    margin-left: 280px;
+}
+
+nav {
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    height: auto;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.95);
+    position: fixed;
+    top: 24px;
+    width: calc(100% - 350px);
+    z-index: 99;
+    align-items: center;
+}
+
+.nav_left {
+    display: block;
+    align-content: center;
+}
+
+.path {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 14px;
+}
+
+.path img {
+    width: 16px;
+}
+
+.page_name {
+    color: rgb(123, 128, 154);
+    margin-left: 5px;
+}
+
+.page_name span {
+    margin-right: 5px;
+}
+
+.open_page {
+    margin: auto 0;
+    margin-top: 5px;
+    color: rgb(52, 71, 103);
+    font-weight: 700;
+}
+
+.nav_right {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto 0;
+}
+
+.nav_right img {
+    width: 20px;
+    margin: 0 10px;
+}
+
+.settings,
+.user {
+    display: flex;
+    margin: auto 5px;
+}
+
+.hamburger {
+    margin: auto 10px;
+    display: none;
+}
+
+button {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    background: transparent;
+    padding: 2px;
+}
+
+.hamburger .bar {
+    width: 20px;
+    margin: 3px 0;
+    border-top: 1px solid rgb(123, 128, 154);
+}
+
+.overview_container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+
+.today_attendance,
+.total_attendance,
+.gred {
+    width: 32%;
+    height: 150px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.today_attendance_icon,
+.total_attendance_icon,
+.gred_icon {
+    position: relative;
+    z-index: 20;
+    top: -40px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.today_attendance_icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25));
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.14) 0rem 0.25rem 1.25rem 0rem, rgba(64, 64, 64, 0.4) 0rem 0.4375rem 0.625rem -0.3125rem;
+}
+
+.total_attendance_icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(195deg, rgb(73, 163, 241), rgb(26, 115, 232));
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.14) 0rem 0.25rem 1.25rem 0rem, rgba(0, 187, 212, 0.4) 0rem 0.4375rem 0.625rem -0.3125rem;
+}
+
+.gred_icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(195deg, rgb(102, 187, 106), rgb(67, 160, 71));
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.14) 0rem 0.25rem 1.25rem 0rem, rgba(76, 175, 79, 0.4) 0rem 0.4375rem 0.625rem -0.3125rem;
+}
+
+.today_attendance_icon img,
+.total_attendance_icon img,
+.gred_icon img {
+    width: 35px;
+}
+
+.today_attendance hr,
+.total_attendance hr,
+.gred hr {
+    margin-top: -60px;
+    width: 90%;
+    margin-left: 10%;
+    color: gray;
+    opacity: 0.2;
+}
+
+.today_attendance span,
+.total_attendance span,
+.gred span {
+    display: block;
+    justify-self: end;
+    margin: 7px 15px 0 0;
+    font-weight: 500;
+    color: rgb(123, 128, 154);
+}

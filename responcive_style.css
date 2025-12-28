@@ -1,0 +1,32 @@
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {
+    #slidebar {
+        display: none;
+        z-index: 999;
+    }
+
+    #main {
+        margin-left: 0;
+    }
+
+    nav {
+        width: calc(100% - 70px);
+        /* position:absolute; */
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .overview_container {
+        flex-direction: column;
+    }
+
+    .today_attendance,
+    .total_attendance,
+    .gred {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}

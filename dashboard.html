@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="style.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responcive_style.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <section id="slidebar">
+        <div class="slidebar">
+            <div class="logo">
+                <img src="image/download (1).png" alt="EduSync">
+                <div class="project_title">EduSync</div>
+            </div>
+            <div class="dashboard">
+                <a href="dashboard.html">
+                    <img src="image/dashboard.png" alt="dashboard_icon">
+                    <div class="dashboard_menu">Dashboard</div>
+                </a>
+            </div>
+            <div class="profile">
+                <a href="Profile.html">
+                    <img src="image/user.png" alt="profile_icon">
+                    <div class="dashboard_menu">Profile</div>
+                </a>
+            </div>
+            <div class="tables">
+                <a href="tables.html">
+                    <img src="image/table.png" alt="table_icon">
+                    <div class="dashboard_menu">Tables</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="main">
+        <nav>
+            <div class="nav_left">
+                <div class="path">
+                    <img src="image/home.png" alt="home">
+                    <div class="page_name"><span>/</span>Dashboard</div>
+                </div>
+                <div class="open_page">Dashboard</div>
+            </div>
+            <div class="nav_right">
+                <div class="hamburger">
+                    <button>
+                        <div class="bar"></div>
+                        <div class="bar bar2"></div>
+                        <div class="bar"></div>
+                    </button>
+                </div>
+                <div class="settings">
+                    <img src="image/settings.png" alt="settings">
+                </div>
+                <div class="user">
+                    <img src="image/users.png" alt="user">
+                </div>
+            </div>
+        </nav>
+
+        <div class="overview_container">
+            <div class="today_attendance">
+                <span>today-attendance</span>
+                <div class="today_attendance_icon"><img src="image/today_attendance.png" alt="today_attendance">
+                </div>
+                <hr>
+            </div>
+            <div class="total_attendance">
+                <span>total-attendance</span>
+                <div class="total_attendance_icon"><img src="image/total_attend.png" alt="total_attend"></div>
+                <hr>
+            </div>
+            <div class="gred">
+                <span>Marks/CGPI</span>
+                <div class="gred_icon"><img src="image/gred.png" alt="gred"></div>
+                <hr>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
